@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/loginpage.css" />
+    <title>login/sign up</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="container" class="container">
+      <!-- FORM SECTION -->
+      <div class="row">
+        <!-- SIGN UP -->
+        <div class="col align-items-center flex-col sign-up">
+          <form action="php/register.php" method="post">
+          <div class="form-wrapper align-items-center">
+            <div class="form sign-up">
+              <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Username" name="username" />
+              </div>
+           
+              <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email" name="email" />
+              </div>
+              <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" name="password" />
+              </div>
+              <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Confirm password" name="confirm_password" />
+              </div>
+              <div class="input-group">
+                <div class="preferences">
+                  <div class="recruiter">
+                    <label for="recuriter1">Recuriter</label>
+                    <input type="checkbox" value="A" name="check_recruit" />
+                  </div>
+                  <div class="jobseeker">
+                    <label for="jobseeker1">Jobseeker</label>
+                    <input type="checkbox" value="B" name="user" />
+                  </div>
+                </div>
+              </div>
+              
+              
+              <button>Sign up</button>
+            </form>
+              <p>
+                <span> Already have an account? </span>
+                <b onclick="toggle()" class="pointer"> Sign in here </b>
+              </p>
+              <button onclick="homepage()"> Go to Home</button>
+            </div>
+          </div>
+          
+        </div>
+        <!-- END SIGN UP -->
+        <!-- SIGN IN -->
+        <div class="col align-items-center flex-col sign-in">
+          <form action="php/login.php" method="post">
+          <div class="form-wrapper align-items-center">
+            <div class="form sign-in">
+              <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Username" name="username"/>
+              </div>
+              <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Password" name="password"/>
+              </div>
+              <div class="input-group">
+                <div class="preferences">
+                  <div class="recruiter">
+                    <label for="recuriter1">Recuriter</label>
+                    <input type="checkbox" value="A" name="check_recruit" />
+                  </div>
+                  <div class="jobseeker">
+                    <label for="jobseeker1">Jobseeker</label>
+                    <input type="checkbox" value="B" name="user" />
+                  </div>
+                </div>
+              </div>
+              <button >Sign in</button>
+            </form>
+              <p>
+                <b> Forgot password? </b>
+
+              </p>
+             
+              <p>
+                <span> Don't have an account? </span>
+                <b onclick="toggle()" class="pointer"> Sign up here </b>
+              </p>
+              <button onclick="homepage()"> Go to Home</button>
+            </div>
+          </div>
+          <div class="form-wrapper"></div>
+        </div>
+        <!-- END SIGN IN -->
+      </div>
+      <!-- END FORM SECTION -->
+      <!-- CONTENT SECTION -->
+      <div class="row content-row">
+        <!-- SIGN IN CONTENT -->
+        <div class="col align-items-center flex-col">
+          <div class="text sign-in">
+            <h2>Welcome</h2>
+          </div>
+          <div class="img sign-in"></div>
+        </div>
+        <!-- END SIGN IN CONTENT -->
+        <!-- SIGN UP CONTENT -->
+        <div class="col align-items-center flex-col">
+          <div class="img sign-up"></div>
+          <div class="text sign-up">
+            <h2>Join with us</h2>
+          </div>
+        </div>
+        <!-- END SIGN UP CONTENT -->
+      </div>
+      <!-- END CONTENT SECTION -->
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>
+
