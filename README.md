@@ -3,7 +3,7 @@
 
 Welcome to the Job Portal Website – your gateway to finding the perfect job or hiring top talent. Built with HTML, CSS, JavaScript, PHP, and MySQL, our platform offers seamless job search capabilities and streamlined recruitment processes.
 
-🌐 **Website:** [Visit Job Portal](https://www.jobportalwebsite.com)
+
 
 ## Features for Job Seekers:
 - **Job Search:** Easily find relevant job listings based on keywords, location, job type, and more.
